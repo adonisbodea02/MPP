@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ro.ubb.catalog-rest-template.bookstore-rest-services.main" target="11" />
+      <module name="ro.ubb.catalog-rest-template.bookstore-rest-services.test" target="11" />
+      <module name="ro.ubb.catalog-rest-template.client.main" target="11" />
+      <module name="ro.ubb.catalog-rest-template.client.test" target="11" />
+      <module name="ro.ubb.catalog-rest-template.core.main" target="11" />
+      <module name="ro.ubb.catalog-rest-template.core.test" target="11" />
+      <module name="ro.ubb.catalog-rest-template.web-server.main" target="11" />
+      <module name="ro.ubb.catalog-rest-template.web-server.test" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
