@@ -27,7 +27,7 @@ public class BookController {
     private BookConverter bookConverter;
 
     @RequestMapping(value="/books",method = RequestMethod.GET)
-    BooksDTO getAllBooks(){
+    Set<BookDTO> getAllBooks(){
         log.trace("getAllBooks --- method entered");
 
         Set<Book> books = bookService.getAllBooks();
@@ -36,7 +36,7 @@ public class BookController {
 
         log.trace("getAllBooks: result={}", result);
 
-        return result;
+        return dtos;
     }
 
     @RequestMapping(value="/books",method = RequestMethod.POST)

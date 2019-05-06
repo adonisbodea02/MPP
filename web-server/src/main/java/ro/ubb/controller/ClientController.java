@@ -27,7 +27,7 @@ public class ClientController {
     private ClientConverter clientConverter;
 
     @RequestMapping(value = "/clients", method = RequestMethod.GET)
-    ClientsDTO getAllClients() {
+    Set<ClientDTO> getAllClients() {
         log.trace("getAllClients --- method entered");
 
         Set<Client> clients = clientService.getAllClients();
@@ -36,7 +36,7 @@ public class ClientController {
 
         log.trace("getAllClients: result={}", result);
 
-        return result;
+        return dtos;
     }
 
     @RequestMapping(value="/clients",method = RequestMethod.POST)
